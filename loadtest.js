@@ -16,7 +16,7 @@ async function PostRequest(destination,endpoint,seq,message){
         method: 'POST',
         uri: destination+"/"+endpoint+"/"+seq,
         body: {
-            payload: message
+          message: message
         },
         json: true // Automatically stringifies the body to JSON
     };
